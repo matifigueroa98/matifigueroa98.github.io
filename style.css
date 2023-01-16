@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: rgb(167, 173, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: rgb(248, 230, 208);
+    margin: 50px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 1);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.left_side{
+    position: relative;
+    background: rgb(12, 77, 138);
+    padding: 20px;
+}
+    /* PROFILE*/
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 15px;
+    border-bottom: 1.5px solid rgb(51, 51, 51);
+}
+
+.imgProfile{
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2{
+    color: antiquewhite;
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.profileText span{
+    font-size: 0.8em;
+    font-weight: 250;
+}
+    /* PERSONAL INFORMATION*/
+.title{
+    color: rgb(250, 198, 129);
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.text{
+    color: antiquewhite;
+    font-weight: 200;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.list{
+    position: relative;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width: 15px;
+    font-size: 15px;
+    color: rgb(168, 160, 45);
+}
+
+.contactInfo ul li span, a{
+    color: #fff;
+    font-weight: 200;
+}
+
+.contactEducation li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.content{
+    color: #fff;
+    font-weight: 500;
+}
+
+.dates{
+    color: rgb(226, 161, 131);
+    font-weight: 700;
+}
+
+.contactEducation h4:nth-child(2){
+    color: #fff;
+    font-weight: 200;
+    margin-top: 3px;
+}
+
+.right_side{
+    position: relative;
+    background: rgb(255, 254, 218);
+    padding: 40px;
+}
+
+.title2{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+#profile-p{
+    text-align: justify;
+    color: #333;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.position{
+    min-width: 220px;
+    margin-bottom: 10px;
+}
+
+.box .position h5{
+    color: darkgrey;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.text2 h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 14px;
+}
+
+.box .text2 span{
+    font-size: 12px;
+    color:  #1b495f;
+    letter-spacing: 1px;
+}
+
+.skills ul{
+    color: darkgoldenrod;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    font-weight: 600;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+#email-link:hover{
+    cursor: pointer;
+    font-size: larger;
+}
+
+.hoverOverMe:hover {
+    font-size: larger;
+}
+  
+#goTopButton{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(84, 113, 211);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer; 
+}
+
+#goTopButton:hover {
+    background-color: darkblue;
+}
+
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .work-experience .box{
+        flex-direction: column;
+}
+    .work-experience .box .position{
+        margin-bottom: 5px;
+    }
+    .skills ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
