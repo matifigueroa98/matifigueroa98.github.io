@@ -180,7 +180,7 @@ body{
 .skills ul{
     color: darkgoldenrod;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr);
     font-weight: 600;
     margin: 20px 0;
     letter-spacing: 1px;
@@ -189,6 +189,11 @@ body{
 #email-link:hover{
     cursor: pointer;
     font-size: larger;
+}
+
+.hoverOverMe {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .hoverOverMe:hover {
