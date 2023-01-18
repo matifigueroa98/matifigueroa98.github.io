@@ -14,6 +14,14 @@ function hover() {
   }
 }
 
+function scrollToTheTop() {
+  const goTopButton = document.getElementById('goTopButton');
+
+  goTopButton.addEventListener('click', function () {
+    document.body.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}
+
 function emailMe() {
   let emailLink = document.getElementById('email-link');
   let emailContent = document.getElementById('email-content');
