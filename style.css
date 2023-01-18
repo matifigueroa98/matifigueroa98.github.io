@@ -191,6 +191,23 @@ body{
     font-size: larger;
 }
 
+#goTopButton{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(84, 113, 211);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer; 
+}
+  
+#goTopButton:hover {
+    background-color: darkblue;
+}
+
 .hoverOverMe {
     margin-bottom: 20px;
     text-align: center;
