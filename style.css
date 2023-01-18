@@ -186,26 +186,10 @@ body{
     letter-spacing: 1px;
 }
 
-#email-link:hover{
+#email-link{
     cursor: pointer;
-    font-size: larger;
-}
-
-#goTopButton{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgb(84, 113, 211);
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer; 
-}
-  
-#goTopButton:hover {
-    background-color: darkblue;
+    color: rgb(214, 158, 16);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .hoverOverMe {
@@ -214,7 +198,24 @@ body{
 }
 
 .hoverOverMe:hover {
-    font-size: larger;
+    font-size: large;
+}
+
+#goTopButton{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgb(17, 65, 109);
+    color: rgb(233, 184, 25);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer; 
+}
+  
+#goTopButton:hover {
+    background-color: rgb(0, 0, 0);
 }
 
 @media (max-width: 1000px){
