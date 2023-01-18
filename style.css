@@ -199,23 +199,6 @@ body{
 .hoverOverMe:hover {
     font-size: larger;
 }
-  
-#goTopButton{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgb(84, 113, 211);
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer; 
-}
-
-#goTopButton:hover {
-    background-color: darkblue;
-}
 
 @media (max-width: 1000px){
     .container{
