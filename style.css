@@ -48,6 +48,7 @@ body{
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
+    border: 3px solid #29292c;
 }
 
 #image{
@@ -86,6 +87,11 @@ body{
     font-weight: 200;
     font-size: 1em;
     margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#name{
+    color: rgb(250, 198, 129);
 }
 
 .list{
@@ -108,14 +114,14 @@ body{
     font-weight: 200;
 }
 
-.contactEducation li{
+.courses li{
     margin-bottom: 15px;
     list-style: none;
 }
 
-.content{
+.courses li h4{
+    font-weight: 200;
     color: #fff;
-    font-weight: 500;
 }
 
 .dates{
@@ -123,9 +129,26 @@ body{
     font-weight: 700;
 }
 
-.contactEducation h4:nth-child(2){
-    color: #fff;
-    font-weight: 200;
+.percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #272626;
+    display: block;
+    margin-top: 10 px;   
+}
+
+.percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #c29e26;
+}
+
+.courses li p:nth-child(2){
+    color: #d8b02b;
+    font-weight: 100;
     margin-top: 3px;
 }
 
@@ -154,6 +177,10 @@ body{
     margin: 20px 0;
 }
 
+.text-link2{
+    font-size: 15px;
+}
+
 .position{
     min-width: 220px;
     margin-bottom: 10px;
@@ -163,6 +190,16 @@ body{
     color: darkgrey;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.contactEducation .box .position h5{
+    color: rgb(52, 53, 48);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.link{
+    color: #272626;
 }
 
 .text2 h4{
@@ -201,21 +238,16 @@ body{
     font-size: large;
 }
 
-#goTopButton{
+.copyright{
+    font-family: "Catamaran";
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgb(17, 65, 109);
-    color: rgb(233, 184, 25);
+    font-size: 12px;
+    bottom: 1px;
+    right: 20px;
     padding: 10px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer; 
-}
-  
-#goTopButton:hover {
-    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    color:rgb(102, 101, 101);
 }
 
 @media (max-width: 1000px){
@@ -234,6 +266,10 @@ body{
 }
     .work-experience .box .position{
         margin-bottom: 5px;
+    }
+    .copyright{
+        flex-direction: column;
+        align-items: center;
     }
     .skills ul{
         grid-template-columns: repeat(1,1fr);
