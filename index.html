@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
+    <title>Resume</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,11 +24,15 @@
                 <div class="imgProfile">
                 <img id="image" src="img/img.png" alt="CV photo">
                 </div>
-                <h2>Matías Nicolás Figueroa <br><span>Java Developer <br>Physical Therapist</span></h2>
+                <h2><strong id="name">Matías Nicolás Figueroa</strong> <br><span>Java Developer <br>Physical Therapist</span></h2>
             </div>
             <section class="contactInfo">
                 <h3 class="title">Personal info</h3>
                 <ul  class="list">
+                    <li>
+                        <span class="icon"><i class="fa fa-male" aria-hidden="true"></i></i></i></span>
+                        <span class="text">25 years</span>
+                    </li>
                     <li>
                         <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
                         <a id="email-link">Contact me</a>
@@ -54,22 +58,20 @@
                     </li>
                 </ul>
             </section>
-    <section class="contactEducation">
-        <h3 class="title">Education</h3>
+    <section class="courses">
+        <h3 class="title">Courses</h3>
             <ul  class="list">
                 <li>
-                    <h5 class="dates">March 2016 – September 2021</h5>
-                    <h4>Physical Therapist</h4>
-                    <h5 class="content">(Complete) Study carried out in FASTA University.
-                        Physical Therapist Bachelor's Degree.
-                    </h5>
+                    <a class="text-link2" target="_blank" href="https://www.udemy.com/certificate/UC-0da274c0-c3e8-44b8-9381-8bf6e37c844b/">Java Programming: Complete Beginner to Advanced</a>
+                    <p>Udemy</p>
                 </li>
                 <li>
-                    <h5 class="dates">March 2010 – November 2015</h5>
-                    <h4>Secondary</h4>
-                    <h5 class="content">(Complete) Study carried out in Divino Rostro School.
-                        Bachelor in Social Sciences. 
-                    </h5>
+                    <a class="text-link2" target="_blank" href="https://seprogramar.inti.gob.ar/inti/certificates/verify/hdT4foJzjTHTcDOl">Fundamentals, Imperative programming and OOPs</a>
+                    <p>Argentina Programa 4.0</p>
+                </li>
+                <li>
+                    <a class="text-link2" target="_blank" href="https://todocodeacademy.com/certificate/50a/">TodoCode: Java para Principiantes</a>
+                    <p>TodoCode Academy</p>
                 </li>
             </ul>
     </section>
@@ -77,28 +79,32 @@
         <h3 class="title">Languages</h3>
             <ul  class="list">
                 <li>
-                    <p class="text">English: <span>intermediate-advanced</span></p>
+                    <p class="text">English</p>
+                    <span class="percent"> <div style="width: 70%"></div>
+                    </span>
                 </li>
                 <li>
-                    <p class="text">Spanish: <span>native</span></p>
+                    <p class="text">Spanish</p>
+                    <span class="percent"> <div style="width: 100%"></div>
+                    </span>
                 </li>
                 <li>
-                    <p class="text">Italian: <span>basic</span></p>
+                    <p class="text">Italian</p>
+                    <span class="percent"> <div style="width: 20%"></div>
+                    </span>
                 </li>
             </ul>
     </section>
         </div>
     <aside class="right_side">
         <div class="profile">
-            <h2 class="title2">Profile</h2>
+            <h2 class="title2">About</h2>
             <p id="profile-p">I am a highly <i>motivated</i>, versatile professional with a passion for technology and healthcare. 
                 I am currently studying to become a <strong>Java Developer</strong> while working as a <strong>Physical Therapist
-                </strong>, and have gained valuable experience through 3 work and travel programs in <i>Utah, United States</i>. 
-                I am excited to connect and explore new opportunities in IT and have a deep understanding of financial markets,
-                 particularly in <i>trading</i>, <i>stocks</i>, and cryptocurrencies.</p>
+                </strong>, and have gained valuable experience through 3 work and travel programs in <i>Utah, United States.</i></p>
         </div>
         <div class="work-experience">
-            <h2 class="title2">Work experience</h2>
+            <h2 class="title2">experience</h2>
             <div class="box">
                 <div class="position">
                     <h5>May 2022 - Present</h5>
@@ -122,26 +128,6 @@
             </div>
             <div class="box">
                 <div class="position">
-                    <h5>January 2022 - Feb 2022</h5>
-                    <h5 style="color: chocolate;">Sponsor</h5>
-                </div>
-                <div class="text2">
-                   <h4>YPF <span>: Argentina</span></h4> 
-                   <p>Beach playground and recreational area.</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="position">
-                    <h5>May 2021 – January 2022</h5>
-                    <h5 style="color: chocolate;">Physical Therapist</h5>
-                </div>
-                <div class="text2">
-                   <h4>Instituto S.E.R <span>: Argentina</span></h4> 
-                   <p>Traumatology, deportology and rehabilitation.</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="position">
                     <h5>February 2021 - April 2021</h5>
                     <h5 style="color: chocolate;">Server Assistant</h5>
                 </div>
@@ -157,7 +143,6 @@
                 </div>
                 <div class="text2">
                    <h4>St Regis Hotels Marriott <span>: utah, eeuu</span></h4> 
-                   <h4>Deer Valley Resort <span>: utah, eeuu</span></h4> 
                    <p>Prep cook, fish and burguer station.</p>
                 </div>
             </div>
@@ -173,6 +158,45 @@
                 </div>
             </div>
         </div>
+        <div class="contactEducation">
+            <h2 class="title2">Education</h2>
+            <div class="box">
+                <div class="position">
+                    <h5>March 2023 – present</h5>
+                    <h5 style="color: rgb(122, 29, 5);">Java developer</h5>
+                </div>
+                <div class="text2">
+                    <p>(Incomplete) Study carried out in Universidad Tecnológica Nacional (UTN).</p>
+                 </div>
+            </div>
+            <div class="box">
+                <div class="position">
+                    <h5>2022 – present</h5>
+                    <h5 style="color: rgb(122, 29, 5);">Full Stack Developer Jr.</h5>
+                </div>
+                <div class="text2">
+                    <p>(Incomplete) Study carried out in Argentina Programa 4.0.</p>
+                 </div>
+            </div>
+            <div class="box">
+                <div class="position">
+                    <h5>March 2016 – Sept 2021</h5>
+                    <h5 style="color: rgb(122, 29, 5);">Physical Therapist</h5>
+                </div>
+                    <div class="text2">
+                        <p>(Complete) Study carried out in FASTA University.</p>
+                     </div>
+            </div>
+            <div class="box">
+                <div class="position">
+                    <h5>March 2010 – Nov 2015</h5>
+                    <h5 style="color: rgb(122, 29, 5);">Secondary</h5>
+                </div>
+                    <div class="text2">
+                        <p>(Complete) Bachelor in Social Sciences in Divino Rostro School.</p>
+                     </div>
+            </div>
+        </div> 
         <div class="skills">
             <h2 class="title2">Skills</h2>
             <ul class="list">
@@ -184,13 +208,14 @@
                 <li class="hoverOverMe">Trading</li>
             </ul>
         </div> 
+        <footer>
+            <p class="copyright">Copyright &copy; 2023 Figueroa</p>
+          </footer>
     </aside>    
-    <button id="goTopButton">Go top</button>
     </section>
     <script>
         hover();
         emailMe();
-        scrollToTheTop();
     </script>
 </body>
 </html>
