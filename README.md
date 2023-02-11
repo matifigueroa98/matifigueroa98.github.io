@@ -1,1 +1,1 @@
-Making a full responsive resume with HTML, CSS and JavaScipt for a final proyect.
+Making a full responsive resume with HTML, CSS and JavaScript for a final proyect.
