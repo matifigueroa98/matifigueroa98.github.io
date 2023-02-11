@@ -150,6 +150,7 @@ body{
     color: #d8b02b;
     font-weight: 100;
     margin-top: 3px;
+    font-size: 14px;
 }
 
 .right_side{
@@ -178,7 +179,7 @@ body{
 }
 
 .text-link2{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .position{
