@@ -18,19 +18,16 @@ function emailMe() {
   let emailLink = document.getElementById('email-link');
   let emailContent = document.getElementById('email-content');
 
-  emailLink.addEventListener('click', function () {
-    /* If the display property is set to "none", it means the div is hidden and it will update the inner HTML 
-    with the mailto link and change the display to "block" to make it visible*/
-    if (emailContent.style.display === 'none') {
-      emailContent.innerHTML =
-        "<a href='mailto:matiasnfigueroa98@gmail.com?subject=Hello&body=Hi there'>" +
-        'matiasnfigueroa98@gmail.com</a>';
-      emailContent.style.display = 'block';
-      emailContent.style.color = '#fff';
-      emailContent.style.marginBottom = '10px';
-    } else {
-      emailContent.style.display = 'none';
-    }
+  emailLink.addEventListener('click', function (event) {
+    event.preventDefault(); 
+    let emailAddress = emailLink.textContent;
+
+    // Crea el enlace mailto con la dirección de correo electrónico
+    let mailtoLink = 'mailto:' + emailAddress + '?subject=I want to contact you&body=Hi there';
+
+    // Abre el cliente de correo electrónico con el enlace mailto
+    window.location.href = mailtoLink;
   });
 }
+
 
